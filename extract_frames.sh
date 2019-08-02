@@ -1,6 +1,6 @@
 #!bin/bash
-frames_folder_path=./MUStARD/utterances_frames
-videos_folder_path=./MUStARD/utterances_final
+frames_folder_path=./Frames_folders
+videos_folder_path=./Videos
 ext=mp4
 
 mkdir "${frames_folder_path}"
