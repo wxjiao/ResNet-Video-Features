@@ -99,13 +99,9 @@ def videos_features(frames_folders_path, videos_path, save_path):
 
 
 def main():
-	# frames_folders_path_u = "./MUStARD/utterances_frames"
-	# videos_path_u = "./MUStARD/utterances_final"
-	# videos_features(frames_folders_path_u, videos_path_u, './MUStARD/utterances_resnet.pt')
-
-	frames_folders_path_c = "./MUStARD/context_frames"
-	videos_path_c = "./MUStARD/context_final"
-	videos_features(frames_folders_path_c, videos_path_c, './MUStARD/context_resnet.pt')
+	frames_folders_path = "./Frames_folders"
+	videos_path = "./Videos"
+	videos_features(frames_folders_path, videos_path, 'resnet_video_features.pt')
 
 
 if __name__ == '__main__':
