@@ -12,7 +12,7 @@ import pickle
 from tqdm import tqdm
 
 
-# Setup proxy
+# Setup proxy, pre-trained models need to be downloaded.
 os.environ['http_proxy'] = 'http://proxy.cse.cuhk.edu.hk:8000'
 os.environ['HTTP_PROXY'] = 'http://proxy.cse.cuhk.edu.hk:8000'
 os.environ['https_proxy'] = 'http://proxy.cse.cuhk.edu.hk:8000'
@@ -53,7 +53,6 @@ def get_frames(frames_folder_path):
 
 		if frames is None:
 			frames = torch.empty((len(frames_file), *frame.size()))
-
 		frames[i] = frame
 
 	return frames
