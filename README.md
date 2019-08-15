@@ -21,3 +21,6 @@ Just run the `resnet_features.py` in Python:
 ```ruby
 python resnet_features.py
 ```
+
+**Requisites**:
+> Pytorch >= 0.4.1
